@@ -192,3 +192,15 @@ i{
 .q4-text-D{
     color: #faff00;
 }
+
+.output4{
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 3em;
+}
+
+.q4-input select {
+    font-size: 1em;
+    padding: 5px;
+}

@@ -29,8 +29,8 @@
 }
 
 .stage {
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   display: inline-block;
   margin: 15px;
   -webkit-perspective: 1200px;
@@ -49,8 +49,8 @@
   position: absolute;
   width: 100%;
   text-align: center;
-  line-height: 200px;
-  font-size: 100px;
+  line-height: 100px;
+  font-size: 50px;
   color: blue;
   font-family: 'Roboto', sans-serif;
   animation: ballRoll 2s ease-out;
@@ -132,6 +132,11 @@
 .stage:nth-child(4) .number:after,
 .stage:nth-child(4) .number:before {
   animation-delay: 2.4s;
+}
+
+.wrap {
+  width: 400px;
+  margin: 0 auto;
 }
 
 .lottoresult {

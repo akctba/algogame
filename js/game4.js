@@ -46,7 +46,8 @@ function checkTicket(drawed, choosed) {
         totalPrize = totalPrize && (drawed[i] == choosed[i]);
     }
     if (totalPrize) {
-        return "All the numbers are correct(even the order): $10,000 prize";
+        addScore(1000);
+        return "All the numbers are correct(even the order): <span class='q4-text-D'>$10,000</span> prize";
     }
 
     let correct = 0;
@@ -55,10 +56,12 @@ function checkTicket(drawed, choosed) {
             correct++;
     }
     if (correct == 3) {
-        return "all the numbers are correct, but not order: $3,000 prize";
+        addScore(300);
+        return "all the numbers are correct, but not order: <span class='q4-text-D'>$3,000</span> prize";
     }
     if (correct == 2) {
-        return "two numbers are correct(even the order):$1,000 prize";
+        addScore(100);
+        return "two numbers are correct(even the order): <span class='q4-text-D'>$1,000</span> prize";
     }
     return "No prize";
 }
