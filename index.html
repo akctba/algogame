@@ -33,8 +33,8 @@
             
                 <div class="lives-boad">
                     <p class="lives-title">LIVES</p>
-                    <div class="lives-flex">
-                    <p class="lives-item"><img src="images/lives.png" alt=""></p>
+                    <div class="lives-flex" id="lives-flex">
+                    <p class="lives-item" id="lives-item"><img src="images/lives.png" alt=""></p>
                     <p class="lives-item"><img src="images/lives.png" alt=""></p>
                     <p class="lives-item"><img src="images/lives.png" alt=""></p>
                     </div>
@@ -51,15 +51,18 @@
             </div>
 
             <div class="input text-center">
-                <input type="text" class="q1-input">
+                <input type="text" class="q1-input" id="q1-input">
                 
                 <input type="image" class="button" src="images/invater.png" width="47px" height="34px" name="button1" alt="" onclick="getMame()">
             </div>
 
-            <div class="output1 text-center"></div>
+            <div class="output text-center blinking" id="output1"></div>
 
             <script>
-                
+                function getMame(){
+                    var name = document.getElementById("q1-input").value;
+                    document.getElementById("output1").innerHTML = "<P>"+ "Hello " +  name + ", nice work! Let's start!" + "</p>";
+                }
             
             </script>
         </div>
@@ -73,12 +76,43 @@
             </div>
 
             <div class="input text-center">
-                <input type="text" class="q2-input">
+                <input type="text" class="q2-input" id="q2-input">
                 
-                <input type="image" class="button" src="images/invater.png" width="47px" height="34px" name="button1" alt="">
+                <input type="image" class="button" src="images/invater.png" width="47px" height="34px" name="button1" alt="" onclick="Prime(),getMame()">
             </div>
 
-            <div class="output2"></div>
+            <div class="output text-center blinking" id="output2"></div>
+
+            <script>
+                function Prime()
+    {
+        var i,flag=0,number;
+        number = Number(document.getElementById("q2-input").value);
+        name = document.getElementById("q1-input").value;
+        for(i=2; i <= number/2; i++)
+        {
+            if(number%i == 0)
+            {
+                flag = 1;
+                break;
+            }
+        }
+        if(flag == 0)
+        {
+            document.getElementById("output2").innerHTML = name + ", " + number + " is Prime number";
+        }
+        else
+        {
+            let parent = document.getElementById("lives-flex");
+            let child = document.getElementById("lives-item");
+            parent.removeChild(child);
+            document.getElementById("output2").innerHTML = name + ", " + number + " is not Prime number";
+        }
+    }
+            
+            </script>
+
+            
         </div>
 
 
@@ -102,7 +136,7 @@
                     <input type="image" class="button" src="images/invater.png" width="47px" height="34px" name="button1" alt="">
                 </div>
 
-                <div class="output"></div>
+                <div class="output blinking"></div>
         </div>
 
 
@@ -129,7 +163,7 @@
             <input type="image" class="button" src="images/invater.png" width="47px" height="34px" name="button1" alt="">
         </div>
 
-        <div class="output4"></div>
+        <div class="output blinking"></div>
 </div>
 
 

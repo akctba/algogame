@@ -50,6 +50,40 @@ h1{
       margin: 0 95px;
   }
 
+  .blinking{
+      -webkit-animation:blink 0.8s ease-in-out infinite alternate;
+
+        -moz-animation:blink 0.8s ease-in-out infinite alternate;
+    
+        animation:blink 0.8s ease-in-out infinite alternate;
+    
+    }
+    
+    @-webkit-keyframes blink{
+    
+        0% {opacity:0;}
+    
+        100% {opacity:1;}
+    
+    }
+    
+    @-moz-keyframes blink{
+    
+        0% {opacity:0;}
+    
+        100% {opacity:1;}
+    
+    }
+    
+    @keyframes blink{
+    
+        0% {opacity:0;}
+    
+        100% {opacity:1;}
+    
+    }
+    
+
 
 /* ------------------------------------------------------
  * navigation
@@ -121,17 +155,23 @@ h1{
     right: 98px;
 }
 .lives-title{
-    padding-left: 65px;
+    position: fixed;
+    top: 130px;
+    right: 162px;
+    /* padding-left: 65px; */
     font-size: 36px;
+    
 }
 
 .lives-flex{
     display: flex;
+    padding-top: 40px;
 }
 
 /* ------------------------------------------------------
  * question1.2
  *--------------------------------------------------------*/
+
  .output{
     color: #55ff55;
     padding-top: 64px;
