@@ -41,6 +41,8 @@ function draw() {
 
 function checkTicket(drawed, choosed) {
     let totalPrize = true;
+    name = document.getElementById("q1-input").value;
+    
     for (let i=0; i<drawed.length; i++) {
         totalPrize = totalPrize && (drawed[i] == choosed[i]);
     }
@@ -62,5 +64,5 @@ function checkTicket(drawed, choosed) {
         addScore(1000);
         return "two numbers are correct(even the order): <span class='q4-text-D'>$1,000</span> prize";
     }
-    return "No prize";
+    return "Sorry " + name + ", No prize";
 }
