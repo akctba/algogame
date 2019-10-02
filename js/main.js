@@ -15,3 +15,17 @@ function addScore(x) {
 
     scoreElement.innerHTML = (pad+score).slice(-pad.length);;
 }
+
+function looseLife() {
+    //loosing "lives" when make wrong answer.
+    let parent = document.getElementById("lives-flex");
+    let child = document.getElementById("lives-item");
+    if (child != null) {
+        parent.removeChild(child);
+    } 
+    child = document.getElementById("lives-item");
+    if (child == null) {
+        //game over
+        parent.innerHTML = "<p class='lives-gameover blinking'>GAME OVER!!!</p>";
+    }
+}

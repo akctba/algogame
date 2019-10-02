@@ -19,9 +19,7 @@ function Prime()
     }
     else
     {
-        let parent = document.getElementById("lives-flex");//loosing "lives" when make wrong answer.
-        let child = document.getElementById("lives-item");
-        parent.removeChild(child);
+        looseLife();
         document.getElementById("output2").innerHTML = name + ", " + number + " is not Prime number";
     }
 }

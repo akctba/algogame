@@ -36,7 +36,6 @@ function draw() {
         if (!drawed.includes(x))
             drawed.push(x);
     }
-
     return drawed;
 }
 
