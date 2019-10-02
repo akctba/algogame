@@ -38,8 +38,8 @@
                     <p class="lives-title">LIVES</p>
                     <div class="lives-flex" id="lives-flex">
                     <p class="lives-item" id="lives-item"><img src="images/lives.png" alt=""></p>
-                    <p class="lives-item"><img src="images/lives.png" alt=""></p>
-                    <p class="lives-item"><img src="images/lives.png" alt=""></p>
+                    <p class="lives-item" id="lives-item"><img src="images/lives.png" alt=""></p>
+                    <p class="lives-item" id="lives-item"><img src="images/lives.png" alt=""></p>
                     </div>
                 </div>
             </div>
@@ -65,6 +65,7 @@
                 function getMame(){
                     var name = document.getElementById("q1-input").value;
                     document.getElementById("output1").innerHTML = "<p>"+ "Hello " +  name + ", nice work! Let's start!" + "</p>";
+                    addScore(10);
                 }
             
             </script>
@@ -103,6 +104,7 @@
         if(flag == 0)
         {
             document.getElementById("output2").innerHTML = name + ", " + number + " is Prime number";
+            addScore(10);
         }
         else
         {
