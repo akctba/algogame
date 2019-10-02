@@ -15,6 +15,7 @@ function game3(){
       realResult = first + second;
     
       if(realResult != userResult){
+        looseLife();
         answer.innerHTML = "Your operation is wrong, the real result is " + realResult + " not " + userResult;
       } else {
         addScore(10);
@@ -25,6 +26,7 @@ function game3(){
       realResult = first - second;
       
       if(realResult != userResult){
+        looseLife();
         answer.innerHTML = "Your operation is wrong, the real result is " + realResult;
       } else {
         addScore(10);
@@ -35,6 +37,7 @@ function game3(){
       realResult = first * second;
       
       if(realResult != userResult){
+        looseLife();
         answer.innerHTML = "Your operation is wrong, the real result is " + realResult;
       } else {
         addScore(10);
@@ -44,6 +47,7 @@ function game3(){
     case "division":
       realResult = first / second;
       if(realResult != userResult){
+        looseLife();
         answer.innerHTML = "Your operation is wrong, the real result is " + realResult;
       } else {
         addScore(10);

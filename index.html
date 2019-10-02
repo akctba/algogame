@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1e1751db70.js"></script>
     <script src="js/main.js" rel="javascript"></script>
+    <script src="js/game2.js" rel="javascript"></script>
     <script src="js/game3.js" rel="javascript"></script>
     <script src="js/game4.js" rel="javascript"></script>
     <link rel="stylesheet" href="CSS/reset.css" type="text/css">
@@ -31,15 +32,15 @@
             
                 <div class="scoreboad">
                     <p class="score-text">SCORE</p>
-                    <p class="score-number" id="score">0000</p>
+                    <p class="score-number" id="score">00000</p>
                 </div>
             
                 <div class="lives-boad">
                     <p class="lives-title">LIVES</p>
-                    <div class="lives-flex">
-                    <p class="lives-item"><img src="images/lives.png" alt=""></p>
-                    <p class="lives-item"><img src="images/lives.png" alt=""></p>
-                    <p class="lives-item"><img src="images/lives.png" alt=""></p>
+                    <div class="lives-flex" id="lives-flex">
+                        <p class="lives-item" id="lives-item"><img src="images/lives.png" alt=""></p>
+                        <p class="lives-item" id="lives-item"><img src="images/lives.png" alt=""></p>
+                        <p class="lives-item" id="lives-item"><img src="images/lives.png" alt=""></p>
                     </div>
                 </div>
             </div>
@@ -54,17 +55,13 @@
             </div>
 
             <div class="input text-center">
-                <input type="text" class="q1-input">
+                <input type="text" class="q1-input" id="q1-input">
                 
-                <input type="image" class="button" src="images/invater.png" width="47px" height="34px" name="button1" alt="" onclick="getMame()">
+                <input type="image" class="button" src="images/invater.png" width="47px" height="34px" name="button1" alt="" onclick="getName()">
             </div>
 
-            <div class="output1 text-center"></div>
+            <div class="output text-center blinking" id="output1"></div>
 
-            <script>
-                
-            
-            </script>
         </div>
     
 <!------------------------------ /question1  ---------------------------------->
@@ -76,12 +73,13 @@
             </div>
 
             <div class="input text-center">
-                <input type="text" class="q2-input">
+                <input type="text" class="q2-input" id="q2-input">
                 
-                <input type="image" class="button" src="images/invater.png" width="47px" height="34px" name="button1" alt="">
+                <input type="image" class="button" src="images/invater.png" width="47px" height="34px" name="button1" alt="" onclick="Prime()">
             </div>
 
-            <div class="output2"></div>
+            <div class="output text-center blinking" id="output2"></div>
+            
         </div>
 
 
@@ -113,6 +111,9 @@
 
                     <div id="nextq3"><a href="#question4">next</a></div>
                 </div>
+
+
+                <div class="output blinking"></div>
 
         </div>
 
@@ -182,7 +183,6 @@
             </div>
         </div>
         <div class="wrap" id="wrap"></div>
-
 
     <div class="output4 text-center" id="lottoMsg"></div>
         
