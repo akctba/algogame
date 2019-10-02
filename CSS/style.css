@@ -98,7 +98,7 @@ h1{
 
   /* score */
 .score-number{
-    padding-left: 5px;
+    /* padding-left: 5px; */
 }
 
 .scoreboad{
@@ -106,8 +106,8 @@ h1{
     top: 130px;
     left: 98px;
     font-size: 36px;
+    text-align: center;
 }
-  
 
 .under-nav{
     z-index: 1;
@@ -168,6 +168,13 @@ h1{
 
 .q3-input:last-of-type{
     margin-right: 0;
+}
+
+.q3-input select {
+    width: 50px;
+    height: 30px;
+    margin-right: 30px;
+    font-size: 1em;
 }
 
 i{
