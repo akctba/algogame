@@ -1,5 +1,6 @@
 # algogame
 Algorithm CICCC final project
+```markdown
 
      ___       __        _______   ______     _______      ___      .___  ___.  _______ 
     /   \     |  |      /  _____| /  __  \   /  _____|    /   \     |   \/   | |   ____|
@@ -8,6 +9,7 @@ Algorithm CICCC final project
  /  _____  \  |  `----.|  |__| | |  `--'  | |  |__| |  /  _____  \  |  |  |  | |  |____ 
 /__/     \__\ |_______| \______|  \______/   \______| /__/     \__\ |__|  |__| |_______|
                                                                                         
+```                                                                               
 ## What is it?
 An interactive web site for kids.
 
