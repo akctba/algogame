@@ -4,7 +4,7 @@ function Prime()
     number = Number(document.getElementById("q2-input").value);
     name = document.getElementById("q1-input").value;
     if(number < 2) 
-        flag = 1;
+        flag = 1; //is not prime
     else
     for(i=2; i <= number/2; i++)
     {
